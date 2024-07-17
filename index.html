@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping Cart</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="left">
+        <div class="icon">
+          <svg
+            fill="#000000"
+            width="30px"
+            height="30px"
+            viewBox="-0.72 -0.72 25.44 25.44"
+            id="job"
+            data-name="Line Color"
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon line-color"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                id="secondary"
+                d="M16,7H8V4A1,1,0,0,1,9,3h6a1,1,0,0,1,1,1Zm1,4H7m8,0v2"
+                style="
+                  fill: none;
+                  stroke: #1f8dbd;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2;
+                "
+              ></path>
+              <rect
+                id="primary"
+                x="5"
+                y="5"
+                width="14"
+                height="18"
+                rx="1"
+                transform="translate(26 2) rotate(90)"
+                style="
+                  fill: none;
+                  stroke: #595959;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2;
+                "
+              ></rect>
+            </g>
+          </svg>
+        </div>
+        <div class="brand">
+          <div class="job">JOB</div>
+          <div>Passcard</div>
+        </div>
+      </nav>
+
+      <nav class="center">
+        <ul class="navbar">
+          <a href="#">ABOUT US</a>
+          <a href="#">PASSCARD</a>
+          <a href="#">PROFILE</a>
+        </ul>
+      </nav>
+
+      <nav class="right">
+        <div class="icon">
+          <a href="#" class="search">
+            <svg
+              width="25px"
+              height="25px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                  stroke="#a6a6a6"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <div class="cart-box">
+            <a href="#" class="cart"
+              ><svg
+                width="25px"
+                height="25px"
+                viewBox="0 0 24.00 24.00"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                stroke="#a6a6a6"
+                stroke-width="0.00024000000000000003"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 1C1.44772 1 1 1.44772 1 2C1 2.55228 1.44772 3 2 3H3.21922L6.78345 17.2569C5.73276 17.7236 5 18.7762 5 20C5 21.6569 6.34315 23 8 23C9.65685 23 11 21.6569 11 20C11 19.6494 10.9398 19.3128 10.8293 19H15.1707C15.0602 19.3128 15 19.6494 15 20C15 21.6569 16.3431 23 18 23C19.6569 23 21 21.6569 21 20C21 18.3431 19.6569 17 18 17H8.78078L8.28078 15H18C20.0642 15 21.3019 13.6959 21.9887 12.2559C22.6599 10.8487 22.8935 9.16692 22.975 7.94368C23.0884 6.24014 21.6803 5 20.1211 5H5.78078L5.15951 2.51493C4.93692 1.62459 4.13696 1 3.21922 1H2ZM18 13H7.78078L6.28078 7H20.1211C20.6742 7 21.0063 7.40675 20.9794 7.81078C20.9034 8.9522 20.6906 10.3318 20.1836 11.3949C19.6922 12.4251 19.0201 13 18 13ZM18 20.9938C17.4511 20.9938 17.0062 20.5489 17.0062 20C17.0062 19.4511 17.4511 19.0062 18 19.0062C18.5489 19.0062 18.9938 19.4511 18.9938 20C18.9938 20.5489 18.5489 20.9938 18 20.9938ZM7.00617 20C7.00617 20.5489 7.45112 20.9938 8 20.9938C8.54888 20.9938 8.99383 20.5489 8.99383 20C8.99383 19.4511 8.54888 19.0062 8 19.0062C7.45112 19.0062 7.00617 19.4511 7.00617 20Z"
+                    fill="#a6a6a6"
+                  ></path>
+                </g></svg
+            ></a>
+            <div class="notification">7</div>
+          </div>
+        </div>
+        <div class="text-signup">
+          <a href="#">LOGIN</a>
+          <div class="divider">|</div>
+          <a href="#">SIGN UP</a>
+        </div>
+      </nav>
+    </header>
+    <div class="lower-body">
+      <div class="below-header-title" style="color: rgb(80, 80, 80)">
+        My Cart
+      </div>
+      <div class="main-wrapper">
+        <div class="sidebar-left">
+          <div class="google-docs-box">
+            <div class="g-left">
+              <i
+                class="fa-regular fa-trash-can"
+                style="color: rgb(19, 140, 253)"
+              ></i>
+            </div>
+            <div class="g-center">
+              <div class="blue-box">
+                <div class="s-white-box">
+                  <i
+                    class="fa-regular fa-file-lines"
+                    style="color: rgb(19, 140, 253)"
+                  ></i>
+                </div>
+                <div class="gd-in-box" style="color: white">Google Docs</div>
+                <div class="gd-des-in-box" style="color: white">
+                  Used for business
+                </div>
+              </div>
+            </div>
+            <div class="g-right" style="color: rgb(65, 65, 65)">
+              <div class="gd">Google Docs</div>
+              <div class="rating-line">
+                <div class="circle-line">
+                  <div class="circle-blue"></div>
+                  <div class="circle-gray"></div>
+                  <div class="circle-gray"></div>
+                </div>
+                <div>
+                  <select name="level-one" id="number">
+                    <option value="one">Level 1-3</option>
+                    <option value="two">Level 2-3</option>
+                    <option value="three">Level 3-3</option>
+                  </select>
+                </div>
+              </div>
+              <div>THB 150</div>
+            </div>
+          </div>
+          <div class="google-slides-box">
+            <div class="gs-left">
+              <i
+                class="fa-regular fa-trash-can"
+                style="color: rgb(19, 140, 253)"
+              ></i>
+            </div>
+            <div class="gs-center">
+              <div class="orange-box">
+                <div class="s-white-box">
+                  <i
+                    class="fa-regular fa-file-lines"
+                    style="color: rgb(209, 145, 6)"
+                  ></i>
+                </div>
+                <div class="gs-in-box" style="color: white">Google Slides</div>
+                <div class="gs-des-in-box" style="color: white">
+                  Used for business
+                </div>
+              </div>
+            </div>
+            <div class="gs-box" style="color: rgb(65, 65, 65)">
+              <div class="gs-right">Google Slides</div>
+              <div class="rating-line">
+                <div class="circle-line">
+                  <div class="circle-blue"></div>
+                  <div class="circle-blue"></div>
+                  <div class="circle-blue"></div>
+                  <div class="circle-gray"></div>
+                </div>
+                <div>
+                  <select name="level-three" id="number">
+                    <option value="four">Level 3/4</option>
+                    <option value="three">Level 3/3</option>
+                    <option value="two">Level 3/2</option>
+                    <option value="one">Level 3/1</option>
+                  </select>
+                </div>
+              </div>
+              <div>THB 150</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-right">
+          <div class="sidebar-right-box">
+            <div class="sr-top-box">
+              <div class="order-info" style="color: rgb(63, 63, 63)">
+                Order Info
+              </div>
+              <div class="top-payment-line">
+                <div>Subtotal</div>
+                <div>THB300</div>
+              </div>
+              <div class="promo-line">
+                <div class="promocode-left">
+                  <div>
+                    <svg
+                      width="35px"
+                      height="35px"
+                      viewBox="0 0 24 24"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      fill="#52a5ff"
+                      stroke="#52a5ff"
+                    >
+                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g
+                        id="SVGRepo_tracerCarrier"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <title>coupon_line</title>
+                        <g
+                          id="页面-1"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                          fill-rule="evenodd"
+                        >
+                          <g
+                            id="Business"
+                            transform="translate(-480.000000, 0.000000)"
+                            fill-rule="nonzero"
+                          >
+                            <g
+                              id="coupon_line"
+                              transform="translate(480.000000, 0.000000)"
+                            >
+                              <path
+                                d="M24,0 L24,24 L0,24 L0,0 L24,0 Z M12.5934901,23.257841 L12.5819402,23.2595131 L12.5108777,23.2950439 L12.4918791,23.2987469 L12.4918791,23.2987469 L12.4767152,23.2950439 L12.4056548,23.2595131 C12.3958229,23.2563662 12.3870493,23.2590235 12.3821421,23.2649074 L12.3780323,23.275831 L12.360941,23.7031097 L12.3658947,23.7234994 L12.3769048,23.7357139 L12.4804777,23.8096931 L12.4953491,23.8136134 L12.4953491,23.8136134 L12.5071152,23.8096931 L12.6106902,23.7357139 L12.6232938,23.7196733 L12.6232938,23.7196733 L12.6266527,23.7031097 L12.609561,23.275831 C12.6075724,23.2657013 12.6010112,23.2592993 12.5934901,23.257841 L12.5934901,23.257841 Z M12.8583906,23.1452862 L12.8445485,23.1473072 L12.6598443,23.2396597 L12.6498822,23.2499052 L12.6498822,23.2499052 L12.6471943,23.2611114 L12.6650943,23.6906389 L12.6699349,23.7034178 L12.6699349,23.7034178 L12.678386,23.7104931 L12.8793402,23.8032389 C12.8914285,23.8068999 12.9022333,23.8029875 12.9078286,23.7952264 L12.9118235,23.7811639 L12.8776777,23.1665331 C12.8752882,23.1545897 12.8674102,23.1470016 12.8583906,23.1452862 L12.8583906,23.1452862 Z M12.1430473,23.1473072 C12.1332178,23.1423925 12.1221763,23.1452606 12.1156365,23.1525954 L12.1099173,23.1665331 L12.0757714,23.7811639 C12.0751323,23.7926639 12.0828099,23.8018602 12.0926481,23.8045676 L12.108256,23.8032389 L12.3092106,23.7104931 L12.3186497,23.7024347 L12.3186497,23.7024347 L12.3225043,23.6906389 L12.340401,23.2611114 L12.337245,23.2485176 L12.337245,23.2485176 L12.3277531,23.2396597 L12.1430473,23.1473072 Z"
+                                id="MingCute"
+                                fill-rule="nonzero"
+                              ></path>
+                              <path
+                                d="M19,4 C20.597725,4 21.903664,5.24892392 21.9949075,6.82372764 L22,7 L22,8.81712 C22,9.42348923 21.6476686,9.89537609 21.224032,10.1466323 L21.1168,10.2048 C20.4531,10.5323 20,11.2142 20,12 C20,12.7296714 20.3906832,13.3697556 20.9778904,13.7196882 L21.1168,13.7952 C21.5503692,14.0090769 21.9360521,14.4507976 21.9928224,15.0341588 L22,15.1829 L22,17 C22,18.597725 20.7511226,19.903664 19.1762773,19.9949075 L19,20 L5,20 C3.40232321,20 2.09633941,18.7511226 2.00509271,17.1762773 L2,17 L2,15.1829 C2,14.5765308 2.35233136,14.1046183 2.77595223,13.8533661 L2.88318,13.7952 C3.54691,13.4677 4,12.7858 4,12 C4,11.2703286 3.60932546,10.6302444 3.02209542,10.2803118 L2.88318,10.2048 C2.44962923,9.99091385 2.06394781,9.54921799 2.0071776,8.96586074 L2,8.81712 L2,7 C2,5.40232321 3.24892392,4.09633941 4.82372764,4.00509271 L5,4 L19,4 Z M19,6 L5,6 C4.48716857,6 4.06449347,6.38604429 4.0067278,6.88337975 L4,7 L4,8.53534 C5.1939,9.22587 6,10.518 6,12 C6,13.404 5.27651967,14.6375634 4.18522683,15.3507193 L4,15.4647 L4,17 C4,17.51285 4.38604429,17.9355092 4.88337975,17.9932725 L5,18 L19,18 C19.51285,18 19.9355092,17.613973 19.9932725,17.1166239 L20,17 L20,15.4647 C18.8061,14.7741 18,13.482 18,12 C18,10.596 18.7234803,9.36240964 19.8147732,8.64931897 L20,8.53535 L20,7 C20,6.48716857 19.613973,6.06449347 19.1166239,6.0067278 L19,6 Z M10,9 C10.51285,9 10.9355092,9.38604429 10.9932725,9.88337975 L11,10 L11,14 C11,14.5523 10.5523,15 10,15 C9.48716857,15 9.06449347,14.613973 9.0067278,14.1166239 L9,14 L9,10 C9,9.44772 9.44772,9 10,9 Z"
+                                id="形状"
+                                fill="#52a5ff"
+                              ></path>
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                  <input placeholder="Promotion Code" />
+                </div>
+                <div class="apply" style="color: rgb(19, 140, 253)">Apply</div>
+              </div>
+            </div>
+            <div class="breakline-box">
+              <div class="breakline"></div>
+            </div>
+
+            <div class="sr-lower-box">
+              <div class="lower-payment-line">
+                <div>Total payment</div>
+                <div class="threehund" style="color: rgb(19, 140, 253)">
+                  THB 300
+                </div>
+              </div>
+              <div class="login-button">
+                <button style="color: white">LOG IN TO CHECKOUT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
